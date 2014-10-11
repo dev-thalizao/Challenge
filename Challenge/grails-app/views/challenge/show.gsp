@@ -23,6 +23,15 @@
 			</g:if>
 			<ol class="property-list challenge">
 			
+				<g:if test="${challengeInstance?.details}">
+				<li class="fieldcontain">
+					<span id="details-label" class="property-label"><g:message code="challenge.details.label" default="Details" /></span>
+					
+						<span class="property-value" aria-labelledby="details-label"><g:fieldValue bean="${challengeInstance}" field="details"/></span>
+					
+				</li>
+				</g:if>
+			
 			</ol>
 			<g:form url="[resource:challengeInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
