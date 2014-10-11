@@ -133,3 +133,7 @@ grails.plugin.springsecurity.controllerAnnotations.staticRules = [
     '/challenge/**':                  ['permitAll']
 ]
 
+
+grails.plugin.springsecurity.facebook.domain.classname='security.FacebookUser'
+grails.plugin.springsecurity.facebook.appId='452265991578773'
+grails.plugin.springsecurity.facebook.secret='9665fd32e7e15da15af2a849d972b6d1'
